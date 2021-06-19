@@ -23,6 +23,7 @@
   /* transitions */
   --main-transition: all 0.3s ease-in-out;
   /* font sizes */
+  --heroHeading: 4.5rem;
   --heading: 3rem;
   --lead: 1.7rem;
   --small: 1.4rem;
@@ -78,7 +79,7 @@ li {
   transition: var(--main-transition);
   outline: 0;
   border-radius: var(--btn-radius);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .btn:hover,
@@ -201,7 +202,6 @@ li {
 
 /* header */
 .header {
-  height: 100vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -240,7 +240,7 @@ li {
 }
 
 .hero__heading {
-  font-size: var(--heading);
+  font-size: var(--heroHeading);
   color: var(--dark-cyan);
 }
 
