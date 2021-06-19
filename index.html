@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- css -->
@@ -16,6 +18,7 @@
 <body>
   <!-- header -->
   <header class="header">
+    <!-- bg pattern -->
     <img src="./assets/images/bg-hero-desktop.svg" alt="bg pattern" class="bg-pattern">
     <!-- nav -->
     <nav class="nav">
@@ -27,13 +30,13 @@
     <!-- hero -->
     <section class="hero">
       <div class="hero__content container">
-        <div class="hero__info">
+        <div class="hero__info" data-aos="fade-right">
           <h1 class="hero__heading">Build The Community Your Fans Will Love</h1>
           <p class="hero__desc">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
             Create connections with your users as you engage in genuine discussion.</p>
           <a href="#!" class="btn btn--cta">Get Started For Free</a>
         </div>
-        <img src="./assets/images/illustration-mockups.svg" alt="" class="hero__img">
+        <img src="./assets/images/illustration-mockups.svg" alt="" class="hero__img" data-aos="fade-left">
       </div>
     </section>
   </header>
@@ -42,7 +45,7 @@
     <section class="blocks">
       <div class="container">
         <!-- single block -->
-        <article class="block">
+        <article class="block" data-aos="fade-up">
           <div class="block__content">
             <div class="block__info">
               <h2 class="block__heading">Grow Together</h2>
@@ -53,7 +56,7 @@
           </div>
         </article>
         <!-- single block -->
-        <article class="block">
+        <article class="block" data-aos="fade-up">
           <div class="block__content">
             <div class="block__info">
               <h2 class="block__heading">Flowing Conversations</h2>
@@ -64,7 +67,7 @@
           </div>
         </article>
         <!-- single block -->
-        <article class="block">
+        <article class="block" data-aos="fade-up">
           <div class="block__content">
             <div class="block__info">
               <h2 class="block__heading">Your Users</h2>
@@ -80,7 +83,7 @@
     </section>
     <!-- cta -->
     <section class="cta">
-      <div class="cta__content container">
+      <div class="cta__content container" data-aos="fade-down">
         <h2 class="cta__heading">Ready To Build Your Community?</h2>
         <a href="#!" class="btn btn--cta">Get Started For Free</a>
       </div>
@@ -156,6 +159,11 @@
       */
     </h3>
   </article>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({ offset: 200, duration: 1000, once: true });
+  </script>
   <!-- js -->
   <script src="./js/script.js"></script>
 </body>
