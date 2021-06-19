@@ -45,6 +45,7 @@ html {
 body {
   background-color: var(--primary-100);
   font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
 img {
@@ -66,6 +67,16 @@ li {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--section-spacing);
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* buttons */
@@ -202,18 +213,7 @@ li {
 
 /* header */
 .header {
-  position: relative;
   overflow-x: hidden;
-}
-
-.bg-pattern {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  pointer-events: none;
 }
 
 /* nav */
