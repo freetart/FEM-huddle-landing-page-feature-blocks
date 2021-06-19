@@ -4,6 +4,8 @@
 /* variables */
 :root {
   /* colors */
+  --black: #222;
+  --white: #fff;
   --primary-pink: hsl(322, 100%, 66%);
   --pale-cyan: hsl(193, 100%, 96%);
   --dark-cyan: hsl(192, 100%, 9%);
@@ -49,4 +51,42 @@ li {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 5rem 2rem;
+}
+
+.heading {}
+
+/* components */
+.btn {
+  display: inline-block;
+  padding: 1.7rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.btn--primary {
+  color: var(--black);
+  font-size: 1.3rem;
+}
+
+/* header */
+.header {
+  background-color: var(--pale-cyan);
+  height: 100vh;
+}
+
+/* nav */
+.nav {
+  position: fixed;
+  width: 100%;
+}
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 15rem;
 }
