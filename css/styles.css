@@ -15,6 +15,7 @@
   --section-spacing: 5rem 2rem;
   /* radius */
   --btn-radius: 5rem;
+  --block-radius: 2rem;
   /* shadows */
   --main-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .1);
   /* transitions */
@@ -90,6 +91,31 @@ li {
 .btn--cta {
   background-color: var(--primary-pink);
   color: var(--white);
+}
+
+.block {
+  padding: 5rem 0;
+  margin: 5rem 0;
+  box-shadow: var(--main-shadow);
+  border-radius: var(--block-radius);
+}
+
+.block__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem 5rem;
+}
+
+.block__heading {
+  font-size: var(--heading);
+}
+
+.block__desc {
+  font-size: var(--lead);
+  margin-top: 2rem;
+  color: var(--grayish-blue);
 }
 
 /* header */
