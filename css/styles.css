@@ -12,6 +12,16 @@
   --grayish-blue: hsl(208, 11%, 55%);
   /* spacing */
   --max-width: 1000px;
+  --section-spacing: 5rem 2rem;
+  /* radius */
+  --btn-radius: 5rem;
+  /* shadows */
+  --main-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .1);
+  /* transitions */
+  --main-transition: all 0.3s ease-in-out;
+  /* font sizes */
+  --heading: 3rem;
+  --lead: 1.7rem;
 }
 
 /* resets */
@@ -50,23 +60,36 @@ li {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: var(--section-spacing);
 }
-
-.heading {}
 
 /* components */
 .btn {
   display: inline-block;
-  padding: 1.7rem;
+  padding: 1.1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 0.2rem;
+  box-shadow: var(--main-shadow);
+  transition: var(--main-transition);
+  outline: 0;
+  border-radius: var(--btn-radius);
+  font-size: 1.3rem;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: translateY(-0.5rem);
 }
 
 .btn--primary {
   color: var(--black);
-  font-size: 1.3rem;
+  background-color: var(--white);
+}
+
+.btn--cta {
+  background-color: var(--primary-pink);
+  color: var(--white);
 }
 
 /* header */
@@ -77,8 +100,7 @@ li {
 
 /* nav */
 .nav {
-  position: fixed;
-  width: 100%;
+  background-color: transparent;
 }
 
 .nav__content {
@@ -89,4 +111,21 @@ li {
 
 .nav__logo {
   width: 15rem;
+}
+
+/* hero */
+.hero__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__heading {
+  font-size: var(--heading);
+}
+
+.hero__desc {
+  font-size: var(--lead);
+  padding: 2rem 0;
 }
